@@ -206,8 +206,7 @@ public class Fraction extends Number implements Cloneable {
 	 * @return the value of this fraction as a {@code float}
 	 */
 	public float floatValue() {
-		// TODO
-		return 0;
+		return new Float( numerator / denominator ); 
 	}
 
 	/**
