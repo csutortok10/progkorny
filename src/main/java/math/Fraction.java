@@ -132,8 +132,8 @@ public class Fraction extends Number implements Cloneable {
 	 * @return a fraction that represents the result
 	 */
 	public Fraction substract(Fraction fraction) {
-		// TODO
-		return null;
+		Fraction fc = new Fraction(fraction.denominator, fraction.numerator);
+		return this.multiply(fc);
 	}
 
 	/**
@@ -155,8 +155,9 @@ public class Fraction extends Number implements Cloneable {
 	 * @return a fraction that represents the result
 	 */
 	public Fraction multiply(Fraction fraction) {
-		// TODO
-		return null;
+		Fraction ret = new Fraction(this.numerator * fraction.numerator,
+				this.denominator * fraction.denominator);
+		return ret;
 	}
 
 	/**
