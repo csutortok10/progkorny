@@ -28,7 +28,8 @@ public class Fraction extends Number implements Cloneable {
 	 * @throws ArithmeticException if the denominator is zero
 	 */
 	public Fraction(int numerator, int denominator) throws ArithmeticException {
-		// TODO
+		this.numerator = numerator;
+		this.denominator = denominator;
 	}
 
 	/**
