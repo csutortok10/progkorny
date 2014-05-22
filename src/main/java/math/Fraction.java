@@ -38,7 +38,8 @@ public class Fraction extends Number implements Cloneable {
 	 * @param n
 	 */
 	public Fraction(int n) {
-		// TODO
+	 this.numerator = n;
+	 this.denominator = 1;
 	}
 
 	/**
