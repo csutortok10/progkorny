@@ -216,8 +216,9 @@ public class Fraction extends Number implements Cloneable {
 	 * @return the value of this fraction as a {@code long}
 	 */
 	public long longValue() {
-		// TODO
-		return 0;
+		
+		return new Long(numerator / denominator);
+		
 	}
 
 	/**
