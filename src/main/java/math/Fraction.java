@@ -127,8 +127,8 @@ public class Fraction extends Number implements Cloneable {
 	 */
 	public Fraction add(Fraction fraction) {
 		Fraction fraction2 = new Fraction(1);
-		fraction2.numerator=this.numerator+fraction.numerator;
-		fraction2.denominator=this.denominator+fraction.denominator;
+		fraction2.denominator=fraction.denominator*this.denominator;
+		fraction2.numerator=fraction.numerator*(fraction2.denominator/fraction.denominator) + this.numerator*(fraction2.denominator/this.denominator);
 		return fraction2;
 	}
 
