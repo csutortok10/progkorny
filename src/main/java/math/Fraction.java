@@ -111,8 +111,11 @@ public class Fraction extends Number implements Cloneable {
 	 * @return a fraction that represents the result
 	 */
 	public Fraction pow(int n) {
-		// TODO
-		return null;
+		Fraction fraction = this;
+		for (int i=0;i<n;i++){
+			fraction.multiply(this);
+		}
+		return fraction;
 	}
 
 	/**
@@ -122,8 +125,10 @@ public class Fraction extends Number implements Cloneable {
 	 * @return a fraction that represents the result
 	 */
 	public Fraction add(Fraction fraction) {
-		// TODO
-		return null;
+		Fraction fraction2 = new Fraction(1);
+		fraction2.numerator=this.numerator+fraction.numerator;
+		fraction2.denominator=this.denominator+fraction.denominator;
+		return fraction2;
 	}
 
 	/**
