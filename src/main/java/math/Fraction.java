@@ -38,7 +38,8 @@ public class Fraction extends Number implements Cloneable {
 	 * @param n
 	 */
 	public Fraction(int n) {
-		// TODO
+	 this.numerator = n;
+	 this.denominator = 1;
 	}
 
 	/**
@@ -133,8 +134,8 @@ public class Fraction extends Number implements Cloneable {
 	 * @return a fraction that represents the result
 	 */
 	public Fraction substract(Fraction fraction) {
-		// TODO
-		return null;
+		Fraction fc = new Fraction(fraction.denominator, fraction.numerator);
+		return this.multiply(fc)
 	}
 
 	/**
@@ -167,8 +168,10 @@ public class Fraction extends Number implements Cloneable {
 	 * @return a fraction that represents the reciprocal of this fraction
 	 */
 	public Fraction reciprocal() {
-		// TODO
-		return null;
+		int tmp = denominator;
+		denominator = numerator;
+		numerator = tmp;
+		return this;
 	}
 
 	/**
