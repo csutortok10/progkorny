@@ -196,7 +196,7 @@ public class Fraction extends Number implements Cloneable {
 	 * @return the value of this fraction as a {@code double}
 	 */
 	public double doubleValue() {
-		return numerator/denominator; 
+		return (double)getNumerator()/getDenominator(); 
 		
 	}
 
