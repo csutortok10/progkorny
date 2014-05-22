@@ -135,7 +135,7 @@ public class Fraction extends Number implements Cloneable {
 	 */
 	public Fraction substract(Fraction fraction) {
 		Fraction fc = new Fraction(fraction.denominator, fraction.numerator);
-		return this.multiply(fc)
+		return this.multiply(fc);
 	}
 
 	/**
