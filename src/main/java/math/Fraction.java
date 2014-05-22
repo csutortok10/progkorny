@@ -144,8 +144,8 @@ public class Fraction extends Number implements Cloneable {
 	 * @throws ArithmeticException if the parameter {@code fraction} is zero
 	 */
 	public Fraction divide(Fraction fraction) throws ArithmeticException {
-		// TODO
-		return null;
+		Fraction fra = new Fraction(this.getNumerator()*fraction.denominator, this.getDenominator()*fraction.numerator);
+		return fra;
 	}
 
 	/**
@@ -176,8 +176,9 @@ public class Fraction extends Number implements Cloneable {
 	 * @return the absolute value of this fraction
 	 */
 	public Fraction abs() {
-		// TODO
-		return null;
+		return (getNumerator()*getDenominator()>=0) ?
+				new Fraction(getNumerator(), getDenominator()) :
+				new Fraction(getNumerator()*(-1), getDenominator());
 	}
 
 	/**
@@ -186,8 +187,7 @@ public class Fraction extends Number implements Cloneable {
 	 * @return the value of this fraction as an {@code int}
 	 */
 	public int intValue() {
-		// TODO
-		return 0;
+		return getNumerator()/getDenominator();
 	}
 
 	/**
