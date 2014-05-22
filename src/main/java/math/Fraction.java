@@ -230,7 +230,7 @@ public class Fraction extends Number implements Cloneable {
 	 * @return {@code true} if this fraction is equal to zero, {@code false} otherwise
 	 */
 	public boolean isZero() {
-		// TODO
+		if (numerator == 0) return true;
 		return false;
 	}
 
