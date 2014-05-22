@@ -28,8 +28,7 @@ public class Fraction extends Number implements Cloneable {
 	 * @throws ArithmeticException if the denominator is zero
 	 */
 	public Fraction(int numerator, int denominator) throws ArithmeticException {
-		this.numerator = numerator;
-		this.denominator = denominator;
+		// TODO
 	}
 
 	/**
@@ -38,8 +37,7 @@ public class Fraction extends Number implements Cloneable {
 	 * @param n
 	 */
 	public Fraction(int n) {
-	 this.numerator = n;
-	 this.denominator = 1;
+		// TODO
 	}
 
 	/**
@@ -173,10 +171,8 @@ public class Fraction extends Number implements Cloneable {
 	 * @return a fraction that represents the reciprocal of this fraction
 	 */
 	public Fraction reciprocal() {
-		int tmp = denominator;
-		denominator = numerator;
-		numerator = tmp;
-		return this;
+		// TODO
+		return null;
 	}
 
 	/**
@@ -205,8 +201,8 @@ public class Fraction extends Number implements Cloneable {
 	 * @return the value of this fraction as a {@code double}
 	 */
 	public double doubleValue() {
-		// TODO
-		return 0;
+		return numerator/denominator; 
+		
 	}
 
 	/**
@@ -215,8 +211,7 @@ public class Fraction extends Number implements Cloneable {
 	 * @return the value of this fraction as a {@code float}
 	 */
 	public float floatValue() {
-		// TODO
-		return 0;
+		return new Float( numerator / denominator ); 
 	}
 
 	/**
