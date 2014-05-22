@@ -166,8 +166,10 @@ public class Fraction extends Number implements Cloneable {
 	 * @return a fraction that represents the reciprocal of this fraction
 	 */
 	public Fraction reciprocal() {
-		// TODO
-		return null;
+		int tmp = denominator;
+		denominator = numerator;
+		numerator = tmp;
+		return this;
 	}
 
 	/**
