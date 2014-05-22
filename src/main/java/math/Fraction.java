@@ -180,8 +180,9 @@ public class Fraction extends Number implements Cloneable {
 	 * @return the absolute value of this fraction
 	 */
 	public Fraction abs() {
-		// TODO
-		return null;
+		return (getNumerator()*getDenominator()>=0) ?
+				new Fraction(getNumerator(), getDenominator()) :
+				new Fraction(getNumerator()*(-1), getDenominator());
 	}
 
 	/**
@@ -190,8 +191,7 @@ public class Fraction extends Number implements Cloneable {
 	 * @return the value of this fraction as an {@code int}
 	 */
 	public int intValue() {
-		// TODO
-		return 0;
+		return getNumerator()/getDenominator();
 	}
 
 	/**
